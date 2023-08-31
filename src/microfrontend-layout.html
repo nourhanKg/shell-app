@@ -1,0 +1,22 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+  <!-- <a href="cat">test</a> -->
+  <application name="@linkDev/nav"></application>
+  <main>
+    <route default>
+      <!-- <application name="@linkDev/nav"></application> -->
+      <h1>Welcome</h1>
+    </route>
+    <route path="service1">
+      <application name="@linkDev/sev1"></application>
+    </route>
+    <route path="service2">
+      <application name="@linkDev/sev2"></application>
+    </route>
+  </main>
+</single-spa-router>
